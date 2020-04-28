@@ -9,11 +9,15 @@
 /* inizio FRAMEWORK */
 .container{
   max-width: 1170px;
+  margin: 0 auto;
 }
 .container::after{
   content: "";
   display: table;
-  clear: both;  
+  clear: both;
+}
+div[class*=col-]{
+  float: left;
 }
 .col-1{
   width: calc(100% / 12) * 1;
